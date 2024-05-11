@@ -41,7 +41,11 @@ def main_window():
     window = tk.Tk()
     window.geometry("350x616+470+40")
     window.title("Pokedex")
+<<<<<<< HEAD
     window.config(padx=10, pady=10, bg='#2a75bb')
+=======
+    window.config(padx=10, pady=10, bg='#ff0000')
+>>>>>>> 241dbabd7739aaace5864858beea167255ddd874
 
     title_label = tk.Label(window, text="Pokedex", bg='#2a75bb')
     Font_tuple = ("Pocket Monk", 40)
@@ -55,7 +59,7 @@ def main_window():
     pokemon_information.pack(padx=10, pady=10)
 
     pokemon_types = tk.Label(window)
-    pokemon_types.config(font=("Arial", 20))
+    pokemon_types.config(font=("RomanS", 20))
     pokemon_types.pack(padx=10, pady=10)
 
     # FUNCTION
@@ -143,7 +147,7 @@ def main_window():
         roo2 = Tk()
         roo2.geometry("350x616+470+40")
         roo2.title("More Options")
-        roo2.config(padx=10, pady=10, bg='#2a75bb')
+        roo2.config(padx=10, pady=10, bg='FFFF00')
         # framer = Frame(roo2, width=350, height=616)
         # framer.pack()
         # framer.place(anchor='center', relx=0.5, rely=0.5)
@@ -211,7 +215,7 @@ def main_window():
     label_id_name.place(x=80, y=340)
 
     text_id_name = tk.Text(window, height=1, width=30)
-    text_id_name.config(font=("Arial", 10))
+    text_id_name.config(font=("Helvetica", 10))
     text_id_name.place(x=50, y=370)
 
     btn_load = tk.Button(window, text="Load Pokemon", command=load_pokemon)
