@@ -41,11 +41,7 @@ def main_window():
     window = tk.Tk()
     window.geometry("350x616+470+40")
     window.title("Pokedex")
-<<<<<<< HEAD
     window.config(padx=10, pady=10, bg='#2a75bb')
-=======
-    window.config(padx=10, pady=10, bg='#ff0000')
->>>>>>> 241dbabd7739aaace5864858beea167255ddd874
 
     title_label = tk.Label(window, text="Pokedex", bg='#2a75bb')
     Font_tuple = ("Pocket Monk", 40)
