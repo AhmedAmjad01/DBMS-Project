@@ -16,6 +16,14 @@ try:
         messagebox.showinfo(title="Connection Successful", message="Database postgres connected succesfully")
 except psycopg2.Error as e:
        messagebox.showerror(title="Error",message=f"Error while connecting: {e}")
+
+try:
+       cred = credentials.Certificate("serviceAccountKey.json")
+       firebase_admin.initialize_app(cred)
+       db = firestore.client()
+       messagebox.showinfo(title="Success", message="Connection to Firestore DB successful")
+except Exception as e:
+       messagebox.showerror(title="Error", message=f"Error Connecting Firestore: {e}")
 def connect():
     connection = None
     try:
