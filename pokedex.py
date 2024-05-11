@@ -41,7 +41,7 @@ def main_window():
     window = tk.Tk()
     window.geometry("350x616+470+40")
     window.title("Pokedex")
-    window.config(padx=10, pady=10, bg='#c20e0e')
+    window.config(padx=10, pady=10, bg='#ff0000')
 
     title_label = tk.Label(window, text="Pokedex", bg='#2a75bb')
     Font_tuple = ("Pocket Monk", 40)
@@ -55,7 +55,7 @@ def main_window():
     pokemon_information.pack(padx=10, pady=10)
 
     pokemon_types = tk.Label(window)
-    pokemon_types.config(font=("Arial", 20))
+    pokemon_types.config(font=("RomanS", 20))
     pokemon_types.pack(padx=10, pady=10)
 
     # FUNCTION
