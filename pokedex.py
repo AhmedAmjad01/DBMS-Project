@@ -18,7 +18,7 @@ import time
 #Splash SCREEEN
 splash_root = Tk()
 splash_root.geometry("350x616+470+40")
-frame = Frame(splash_root, width=310, height=616)
+frame = Frame(splash_root, width=350, height=616)
 frame.pack()
 frame.place(anchor='center', relx=0.5, rely=0.5)
 
